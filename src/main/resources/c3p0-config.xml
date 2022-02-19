@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<c3p0-config>
+    <named-config name="Mysql_dataSource">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=Asia/Shanghai&amp;useSSL=false&amp;autoReconnect=true&amp;zeroDateTimeBehavior=convertToNull</property>
+        <property name="user">shris</property>
+        <property name="password">Shris_123</property> 
+        <property name="acquireIncrement">5</property>
+        <property name="acquireRetryDelay">1000</property>
+        <property name="initialPoolSize">10</property>
+        <property name="minPoolSize">10</property>
+        <property name="maxPoolSize">100</property>
+        <property name="maxIdleTime">120</property>
+        <property name="checkoutTimeout">5000</property>
+        <property name="idleConnectionTestPeriod">60</property>  
+        <property name="testConnectionOnCheckin">true</property>
+        <property name="testConnectionOnCheckout">false</property>
+        <property name="maxStatements">0</property> 
+        <property name="maxConnectionAge">20</property>
+    </named-config>
+    
+    <named-config name="SQLServer_dataSource">
+        <property name="driverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="jdbcUrl">jdbc:sqlserver://127.0.0.1;databaseName=ICCO</property>
+        <property name="user">sa</property>
+        <property name="password">shris</property> 
+        <property name="acquireIncrement">2</property>
+        <property name="acquireRetryDelay">1000</property>
+        <property name="initialPoolSize">2</property>
+        <property name="minPoolSize">2</property>
+        <property name="maxPoolSize">6</property>
+        <property name="maxIdleTime">120</property>
+        <property name="checkoutTimeout">5000</property>
+        <property name="idleConnectionTestPeriod">60</property>  
+        <property name="testConnectionOnCheckin">true</property>
+        <property name="testConnectionOnCheckout">false</property>
+        <property name="maxStatements">0</property> 
+        <property name="maxConnectionAge">20</property>
+    </named-config>
+    
+
+	<!-- <named-config name="oracleDataSource">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC&amp;useSSL=false</property>
+          <property name="user">shris</property>
+        <property name="password">Shris_123</property> 
+        <property name="acquireIncrement">5</property>
+        <property name="acquireRetryDelay">1000</property>
+        <property name="initialPoolSize">8</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxPoolSize">50</property>
+        <property name="maxIdleTime">1200</property>
+        <property name="checkoutTimeout">5000</property>
+        <property name="idleConnectionTestPeriod">60</property> 
+        <property name="testConnectionOnCheckin">true</property>
+        <property name="testConnectionOnCheckout">false</property>
+    </named-config> -->
+</c3p0-config>
